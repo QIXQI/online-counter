@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8" /> 
+        <title>HexConvert</title> 
+        <link rel="stylesheet" type="text/css" href="css/hexconvert.css" />
+    </head>
+    <body>
+        <fieldset>
+            <legend>在线进制转换</legend>
+            <input type="radio" name="numHex" value="hex2" id="numHex2" /><label for="numHex2">&nbsp;2进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="numHex" value="hex4" id="numHex4" /><label for="numHex4">&nbsp;4进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="numHex" value="hex8" id="numHex8" /><label for="numHex8">&nbsp;8进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="numHex" value="hex10" id="numHex10" checked/><label for="numHex10">&nbsp;10进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="numHex" value="hex16" id="numHex16" /><label for="numHex16">&nbsp;16进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="numHex" value="hex32" id="numHex32" /><label for="numHex32">&nbsp;32进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="numHex" id="numHex">
+                <option value="hex2">2进制</option>
+                <option value="hex3">3进制</option>
+                <option value="hex4">4进制</option>
+                <option value="hex5">5进制</option>
+                <option value="hex6">6进制</option>
+                <option value="hex7">7进制</option> 
+                <option value="hex8">8进制</option>
+                <option value="hex9">9进制</option>
+                <option value="hex10" selected="selected">10进制</option>
+                <option value="hex11">11进制</option>
+                <option value="hex12">12进制</option>
+                <option value="hex13">13进制</option>
+                <option value="hex14">14进制</option>
+                <option value="hex15">15进制</option>
+                <option value="hex16">16进制</option>
+                <option value="hex17">17进制</option>
+                <option value="hex18">18进制</option>
+                <option value="hex19">19进制</option>
+                <option value="hex20">20进制</option>
+                <option value="hex21">21进制</option>
+                <option value="hex22">22进制</option>
+                <option value="hex23">23进制</option>
+                <option value="hex24">24进制</option>
+                <option value="hex25">25进制</option>
+                <option value="hex26">26进制</option>
+                <option value="hex27">27进制</option>
+                <option value="hex28">28进制</option>
+                <option value="hex29">29进制</option>
+                <option value="hex30">30进制</option>
+                <option value="hex31">31进制</option>
+                <option value="hex32">32进制</option>
+                <option value="hex33">33进制</option>
+                <option value="hex34">34进制</option>
+                <option value="hex35">35进制</option>
+                <option value="hex36">36进制</option>
+            </select><br />
+            <label for="number">转换数字：</label>
+            <input type="text" name="number" id="number" placeholder="请输入要转换的数字" /><br /><br />
+            <input type="radio" name="resultHex" value="hex2" id="resultHex2" checked/><label for="resultHex2">&nbsp;2进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="resultHex" value="hex4" id="resultHex4" /><label for="resultHex4">&nbsp;4进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="resultHex" value="hex8" id="resultHex8" /><label for="resultHex8">&nbsp;8进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="resultHex" value="hex10" id="resultHex10" /><label for="resultHex10">&nbsp;10进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="resultHex" value="hex16" id="resultHex16" /><label for="resultHex16">&nbsp;16进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="resultHex" value="hex32" id="resultHex32" /><label for="resultHex32">&nbsp;32进制</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="resultHex" id="resultHex">
+                <option value="hex2" selected="selected">2进制</option>
+                <option value="hex3">3进制</option>
+                <option value="hex4">4进制</option>
+                <option value="hex5">5进制</option>
+                <option value="hex6">6进制</option>
+                <option value="hex7">7进制</option>
+                <option value="hex8">8进制</option>
+                <option value="hex9">9进制</option>
+                <option value="hex10">10进制</option>
+                <option value="hex11">11进制</option>
+                <option value="hex12">12进制</option>
+                <option value="hex13">13进制</option>
+                <option value="hex14">14进制</option>
+                <option value="hex15">15进制</option>
+                <option value="hex16">16进制</option>
+                <option value="hex17">17进制</option>
+                <option value="hex18">18进制</option>
+                <option value="hex19">19进制</option>
+                <option value="hex20">20进制</option>
+                <option value="hex21">21进制</option>
+                <option value="hex22">22进制</option>
+                <option value="hex23">23进制</option>
+                <option value="hex24">24进制</option>
+                <option value="hex25">25进制</option>
+                <option value="hex26">26进制</option>
+                <option value="hex27">27进制</option>
+                <option value="hex28">28进制</option>
+                <option value="hex29">29进制</option>
+                <option value="hex30">30进制</option>
+                <option value="hex31">31进制</option>
+                <option value="hex32">32进制</option>
+                <option value="hex33">33进制</option>
+                <option value="hex34">34进制</option>
+                <option value="hex35">35进制</option>
+                <option value="hex36">36进制</option>
+            </select><br />
+            <label for="result">转换结果：</label>
+            <input type="text" name="result" id="result" placeholder="转换的结果" readonly="readonly" /><br />
+            <button type="button" id="swap">转换</button>
+        </fieldset>
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/hexconvert.js"></script>
+    </body>
+</html>
