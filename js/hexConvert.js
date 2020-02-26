@@ -18,51 +18,51 @@ numHex2.onchange = function(){
     // numHex.options[0].setAttribute("selected", true);
     numHex.options[0].selected = true;
     // alert(numHex.options[0].value);
-}
+};
  
 numHex4.onchange = function(){
     numHex.options[2].selected = true;
-}
+};
 
 numHex8.onchange = function(){
     numHex.options[6].selected = true;
-}
+};
 
 numHex10.onchange = function(){
     numHex.options[8].selected = true;
-}
+};
 
 numHex16.onchange = function(){
     numHex.options[14].selected = true;
-}
+};
 
 numHex32.onchange = function(){
     numHex.options[30].selected = true;
-}
+};
 
 resultHex2.onchange = function(){           // result
     resultHex.options[0].selected = true;
-}
+};
 
 resultHex4.onchange = function(){
     resultHex.options[2].selected = true;
-}
+};
 
 resultHex8.onchange = function(){
     resultHex.options[6].selected = true;
-}
+};
 
 resultHex10.onchange = function(){
     resultHex.options[8].selected = true;
-}
+};
 
 resultHex16.onchange = function(){
     resultHex.options[14].selected = true;
-}
+};
 
 resultHex32.onchange = function(){
     resultHex.options[30].selected = true;
-}
+};
 
 
 // select 选项改变事件
@@ -98,7 +98,7 @@ numHex.onchange = function(){
             document.getElementById(selectHex).checked = false;
         }
     }
-}
+};
 
 resultHex.onchange = function(){        // result
     // 获取当前radio 选中值
@@ -126,7 +126,7 @@ resultHex.onchange = function(){        // result
             document.getElementById(selectHex).checked = false;
         }
     }
-}
+};
 
 
 
@@ -327,11 +327,11 @@ document.onkeydown = function(event){           // 按Enter 键时调用
     if(e && e.keyCode === 13){      // Enter
         convert();
     }
-}
+};
 
 var swap = document.getElementById('swap');
 swap.onclick = function(){
     convert();
-}
+};
 
 

@@ -66,104 +66,104 @@ var INVFlag = 0;       // 点击INV 按钮切换功能
 
 buttons[1].onclick = function(){
     document.getElementById('value').value += '(';
-}
+};
 
 buttons[2].onclick = function(){
     document.getElementById('value').value += ')';
-}
+};
 
 buttons[3].onclick = function(){
     // alert('1/x');
     document.getElementById('value').value += '^(-1)';
-}
+};
 
 buttons[4].onclick = function(){
     alert('mc');
-}
+};
 
 buttons[5].onclick = function(){
     alert('m+');
-}
+};
 
 buttons[6].onclick = function(){
     alert('m-');
-}
+};
 
 buttons[7].onclick = function(){
     alert('mr');
-}
+};
 
 buttons[8].onclick = function(){
     // alert('x²');
     document.getElementById('value').value += '^(2)';
-}
+};
 
 buttons[9].onclick = function(){
     // alert('x³');
     document.getElementById('value').value += '^(3)';
-}
+};
 
 buttons[10].onclick = function(){
     // alert('x^y');
     document.getElementById('value').value += '^(';
-}
+};
 
 buttons[11].onclick = function(){
     document.getElementById('value').value = '';
-}
+};
 
 buttons[12].onclick = function(){
     if(document.getElementById('value').value != ''){
         document.getElementById('value').value += '÷';
     }
-}
+};
 
 buttons[13].onclick = function(){
     if(document.getElementById('value').value != ''){
         document.getElementById('value').value += '×';
     }
-}
+};
 
 buttons[14].onclick = function(){
     var str = document.getElementById('value').value;
     document.getElementById('value').value = str.substring(0, str.length-1);
-}
+};
 
 buttons[15].onclick = function(){
     // alert('x!');
     document.getElementById('value').value += '!';
-}
+};
 
 buttons[16].onclick = function(){
     // alert('√');
     document.getElementById('value').value += '√';
-}
+};
 
 buttons[17].onclick = function(){
     // alert('y√x');
     document.getElementById('value').value += '^(1÷';
-}
+};
 
 buttons[18].onclick = function(){
     document.getElementById('value').value += '7';
-}
+};
 
 buttons[19].onclick = function(){
     document.getElementById('value').value += '8';
-}
+};
 
 buttons[20].onclick = function(){
     document.getElementById('value').value += '9';
-}
+};
 
 buttons[21].onclick = function(){
     document.getElementById('value').value += '-';
-}
+};
 
 buttons[22].onclick = function(){
     // alert('e');
     document.getElementById('value').value += 'e';
-}
+};
 
 buttons[23].onclick = function(){
     // alert('ln');
@@ -172,7 +172,7 @@ buttons[23].onclick = function(){
     }else{
         document.getElementById('value').value += 'e^(';
     }
-}
+};
 
 buttons[24].onclick = function(){
     // alert('log');
@@ -181,25 +181,25 @@ buttons[24].onclick = function(){
     }else{
         document.getElementById('value').value += '10^(';
     }
-}
+};
 
 buttons[25].onclick = function(){
     document.getElementById('value').value += '4';
-}
+};
 
 buttons[26].onclick = function(){
     document.getElementById('value').value += '5';
-}
+};
 
 buttons[27].onclick = function(){
     document.getElementById('value').value += '6';
-}
+};
 
 buttons[28].onclick = function(){
     if(document.getElementById('value').value != ''){
         document.getElementById('value').value += '+';
     }
-}
+};
 
 buttons[29].onclick = function(){
     // alert('sin');
@@ -209,7 +209,7 @@ buttons[29].onclick = function(){
         // document.getElementById('value').value += 'sin^-1(';
         document.getElementById('value').value += 'arcsin(';
     }
-}
+};
 
 buttons[30].onclick = function(){
     // alert('cos');
@@ -219,7 +219,7 @@ buttons[30].onclick = function(){
         // document.getElementById('value').value += 'cos^-1(';
         document.getElementById('value').value += 'arccos(';
     }
-}
+};
 
 buttons[31].onclick = function(){
     // alert('tan');
@@ -229,25 +229,25 @@ buttons[31].onclick = function(){
         // document.getElementById('value').value += 'tan^-1(';
         document.getElementById('value').value += 'arctan(';
     }
-}
+};
 
 buttons[32].onclick = function(){
     document.getElementById('value').value += '1';
-}
+};
 
 buttons[33].onclick = function(){
     document.getElementById('value').value += '2';
-}
+};
 
 buttons[34].onclick = function(){
     document.getElementById('value').value += '3';
-}
+};
 
 buttons[35].onclick = function(){
     // alert('=');
     var str = document.getElementById('value').value;
     document.getElementById('value').value = calculate(str);
-}
+};
 
 buttons[36].onclick = function(){
     // alert('INV');
@@ -269,24 +269,24 @@ buttons[36].onclick = function(){
         buttons[30].getElementsByTagName('input')[0].value = 'cos';
         buttons[31].getElementsByTagName('input')[0].value = 'tan';
     }
-}
+};
 
 buttons[37].onclick = function(){
     alert('DEG');
-}
+};
 
 buttons[38].onclick = function(){
     // alert('π');
     document.getElementById('value').value += 'π';
-}
+};
 
 buttons[39].onclick = function(){
     document.getElementById('value').value += '%';
-}
+};
 
 buttons[40].onclick = function(){
     document.getElementById('value').value += '0';
-}
+};
 
 buttons[41].onclick = function(){
     var str = document.getElementById('value').value;
@@ -301,7 +301,7 @@ buttons[41].onclick = function(){
             }
         }
     }
-}
+};
 
 
 //*****************优先级****************/
@@ -775,4 +775,4 @@ document.onkeydown = function(event){
     if(e && e.keyCode === 13){      // Enter
         buttons[35].click();
     }
-}
+};

@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+body{
+    background-image: url('/image/body.jpg');
+    background-repeat: no-repeat;
+}
+
+
 table{
     /* border: 8px solid red; */
     border-right: 2px solid black;

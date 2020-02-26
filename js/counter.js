@@ -55,107 +55,107 @@ var buttons = document.getElementsByTagName('td');
 
 buttons[1].onclick = function(){
     alert('mc');
-}
+};
 
 buttons[2].onclick = function(){
     alert('m+');
-}
+};
  
 buttons[3].onclick = function(){
     alert('m-');
-}
+};
 
 buttons[4].onclick = function(){
     alert('mr');
-}
+};
 
 buttons[5].onclick = function(){
     document.getElementById('value').value = '';
-}
+};
 
 buttons[6].onclick = function(){
     // alert('/');
     if(document.getElementById('value').value !== ''){
         document.getElementById('value').value += '÷';
     }
-}
+};
 
 buttons[7].onclick = function(){
     // alert('*');
     if(document.getElementById('value').value !== ''){
         document.getElementById('value').value += '×';
     }
-}
+};
 
 buttons[8].onclick = function(){
     // alert('#');
     var str = document.getElementById('value').value;
     document.getElementById('value').value = str.substring(0, str.length-1);
-}
+};
 
 buttons[9].onclick = function(){
     // alert(typeof(document.getElementById('value').value));
     // document.getElementById('value').value.concat('7');
     document.getElementById('value').value += '7';
-}
+};
 
 buttons[10].onclick = function(){
     document.getElementById('value').value += '8';
-}
+};
 
 buttons[11].onclick = function(){
     document.getElementById('value').value += '9';
-}
+};
 
 buttons[12].onclick = function(){
     // alert('-');
     document.getElementById('value').value += '-';
-}
+};
 
 buttons[13].onclick = function(){
     document.getElementById('value').value += '4';
-}
+};
 
 buttons[14].onclick = function(){
     document.getElementById('value').value += '5';
-}
+};
 
 buttons[15].onclick = function(){
-    document.getElementById('value').value += '6'
-}
+    document.getElementById('value').value += '6';
+};
 
 buttons[16].onclick = function(){
     // alert('+');
     if(document.getElementById('value').value !== ''){
         document.getElementById('value').value += '+';
     }
-}
+};
 
 buttons[17].onclick = function(){
     document.getElementById('value').value += '1';
-}
+};
 
 buttons[18].onclick = function(){
     document.getElementById('value').value += '2';
-}
+};
 
 buttons[19].onclick = function(){
     document.getElementById('value').value += '3';
-}
+};
 
 buttons[20].onclick = function(){
     // alert('=');
     var str = document.getElementById('value').value;
-    document.getElementById('value').value = calculate(str)
-}
+    document.getElementById('value').value = calculate(str);
+};
 
 buttons[21].onclick = function(){
     document.getElementById('value').value += '%';
-}
+};
 
 buttons[22].onclick = function(){
     document.getElementById('value').value += '0';
-}
+};
 
 buttons[23].onclick = function(){
     // alert('.');
@@ -171,7 +171,7 @@ buttons[23].onclick = function(){
             }
         }
     }
-}
+};
 
 
 //*****************优先级****************/
@@ -316,4 +316,4 @@ document.onkeydown = function(event){
     if(e && e.keyCode === 13){      // Enter
         buttons[20].click();
     }
-}
+};
